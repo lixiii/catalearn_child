@@ -1,1 +1,0 @@
-cp ./custom.js ~/.jupyter/custom/custom.js

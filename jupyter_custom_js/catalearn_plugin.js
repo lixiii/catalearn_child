@@ -1,6 +1,3 @@
-// customized changes to jupyter
-// run "cp custom.js ~/.jupyter/custom/custom.js"
-
 //do NOT add trailing slash as all following URLs have slashes
 const catalearn_API_location = window.location.href.match(/http:\/\/[a-z.0-9]+/)[0];
 
