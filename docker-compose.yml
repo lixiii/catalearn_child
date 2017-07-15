@@ -1,0 +1,6 @@
+catalearn_child:
+  build: .
+  command: echo 'ready'
+  volumes:
+    - .:/home/app/catalearn_child
+    - /home/app/catalearn_child/node_modules
