@@ -4,8 +4,9 @@ FROM node:6.11.0
 RUN apt-get update && \
     apt-get -y upgrade && \
     apt-get install -y python3-pip && \
-    pip3 install --upgrade setuptools pip3 && \
-    pip3 install keras jupyter
+    pip3 install --upgrade setuptools pip && \
+    pip3 install jupyter && \
+    pip3 install keras
 
 ENV HOME=/home/app
 
