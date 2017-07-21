@@ -1,5 +1,8 @@
 catalearn_child:
   build: .
+  command: ./node_modules/.bin/nodemon server.js
+  environment: 
+    NODE_ENV: development
   ports:
     - "80:80"
   volumes:
