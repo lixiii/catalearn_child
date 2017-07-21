@@ -1,6 +1,7 @@
 catalearn_child:
   build: .
-  command: echo 'ready'
+  ports:
+    - "80:80"
   volumes:
     - .:/home/app/catalearn_child
     - /home/app/catalearn_child/node_modules
