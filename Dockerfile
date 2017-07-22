@@ -8,7 +8,7 @@ FROM node:6.11.0
 #     pip3 install jupyter && \
 #     pip3 install keras
 
-RUN /setup.sh
+CMD ["./setup.sh"]
 
 ENV HOME=/home/app
 
