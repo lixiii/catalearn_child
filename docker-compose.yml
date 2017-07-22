@@ -5,7 +5,6 @@ catalearn_child:
     NODE_ENV: development
   ports:
     - "80:80"
-    - "10000:10000"
     - "8000-10000:8000-10000"
   volumes:
     - .:/home/app/catalearn_child

@@ -12,6 +12,9 @@
 ### Running a new container from the image
 ` docker run -it catalearn_child `
 
+### Accessing shell of a running container
+` sudo docker exec -i -t ${some id to replace with} /bin/bash `
+sudo docker exec -i -t da5aec13babd /bin/bash 
 
 ## Using compose: but seems to have problems
 
