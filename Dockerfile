@@ -11,4 +11,7 @@ WORKDIR $HOME/catalearn_child/
 
 RUN ./setup.sh
 
+EXPOSE 80
+EXPOSE 8000-12000
+
 CMD ["node", "./server.js"]
