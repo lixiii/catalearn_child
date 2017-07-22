@@ -21,3 +21,6 @@ pip3 install \
     jupyter
 
 npm install
+
+# install global forever for use
+npm install -g forever
