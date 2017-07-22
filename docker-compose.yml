@@ -1,11 +1,11 @@
 catalearn_child:
   build: .
-  command: ./start.sh
+  # command: ./start.sh
   environment: 
     NODE_ENV: development
   ports:
     - "80:80"
-    - "8000-10000:8000-10000"
+    - "8000-12000:8000-12000"
   volumes:
     - .:/home/app/catalearn_child
     - /home/app/catalearn_child/node_modules
