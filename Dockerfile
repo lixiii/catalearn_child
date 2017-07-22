@@ -1,14 +1,14 @@
-FROM node:6.11.0
+FROM ubuntu:16.04
 
 # set up python resources
 
-ENV HOME=/home/app
+ENV HOME=/home/catalearn
 
-COPY package.json npm-shrinkwrap.json $HOME/catalearn_child/
+# COPY package.json npm-shrinkwrap.json $HOME/catalearn_child/
+COPY . $HOME/catalearn_child/
 
-WORKDIR $HOME/catalearn_child
+WORKDIR $HOME/catalearn_child/
 
-COPY setup.sh $HOME/catalearn_child/
 RUN ./setup.sh
 
 # RUN npm install
