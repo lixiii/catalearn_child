@@ -1,9 +1,21 @@
 apt-get update 
 apt-get -y upgrade 
+
+apt-get install -y curl
+
+# install nodejs v6
+
+curl -sL https://deb.nodesource.com/setup_6.x | bash -
+apt-get install -y nodejs
+
+# install python and pip3
+
 apt-get install -y \
-    nodejs  \
     python3-pip 
-# pip3 install --upgrade setuptools pip 
+
+# upgrade pip and install keras + jupyter 
+
+pip3 install --upgrade pip
 pip3 install \
     keras   \
     jupyter

@@ -11,6 +11,4 @@ WORKDIR $HOME/catalearn_child/
 
 RUN ./setup.sh
 
-# RUN npm install
-
-# CMD ["node", "./server.js"]
+CMD ["node", "./server.js"]

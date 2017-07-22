@@ -4,6 +4,17 @@
 
 ## Docker instructions
 
+## Without using compose
+
+### Building the image
+` docker build -t catalearn_child .`
+
+### Running a new container from the image
+` docker run -it catalearn_child `
+
+
+## Using compose: but seems to have problems
+
 ### Building the image
 
 `docker-compose build`
